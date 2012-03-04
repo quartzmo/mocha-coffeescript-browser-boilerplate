@@ -6,11 +6,6 @@ build:
 test-build:
 	coffee -c -o test/lib test/src
 
-clean:
-	rm ./*.js
-	rm -rf test/lib
-	mkdir test/lib
-
 watch:
 	coffee -o . -cw src
 
