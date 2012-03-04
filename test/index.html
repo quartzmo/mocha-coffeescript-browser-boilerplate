@@ -4,21 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>Exercises.js Tests</title>
-  <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+  <link rel="stylesheet" href="vendor/mocha.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js"></script>
-  <script src="../../node_modules/mocha/mocha.js"></script>
-  <script src="../../node_modules/expect.js/expect.js"></script>
-  <script>mocha.setup('bdd')</script>
-  <script src="../../lib/example.js"></script>
-  <script src="../lib/example.js"></script>
+  <script src="vendor/mocha.js"></script>
+  <script src="vendor/chai.js"></script>
   <script>
+    chai.should();
+    mocha.setup('bdd');
     $(function () {
       mocha
         .run()
         .globals(['Example']) // acceptable globals
     })
   </script>
+
+  <!-- include source files here... -->
+  <script src="../example.js"></script>
+
+
+  <script src="lib/example.js"></script>
+
 </head>
 <body>
   <div id="mocha"></div>

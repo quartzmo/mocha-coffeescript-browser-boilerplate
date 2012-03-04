@@ -1,19 +1,15 @@
 # Mocha Browser & CoffeeScript Boilerplate
 
 A minimalistic boilerplate for a browser-based CoffeeScript project that is tested with [visionmedia/mocha](http://visionmedia.github.com/mocha).
-Uses [Expect](https://github.com/LearnBoost/expect.js) instead of Should for browser compatibility.
-Requires Node.js for command-line test run. Node is **not** required for the browser-based test run.
-
-For a more extensive demo of Mocha's featureset, take a look at [ryu22e/mocha-example](https://github.com/ryu22e/mocha-example).
+Uses Chai instead of Should for browser compatibility.
+Requires CoffeeScript's `coffee` executable in path for make compilation. CoffeeScript, NPM, and Node are **not** required for the browser-based test run.
 
 ## Usage
 
 1. `rm -rf .git`
-1. `npm install .`
-1. `make test`
 1. Replace `example.coffee` in both `test` and `src` with your own code.
-1. Edit `Readme.md`, `package.json`, and `index.js`, replacing this project's details with your own.
-1. `make clean build test`
+1. `make` to compile source and test CoffeeScript, or else `make watch` and `make test-watch` for automatic compilation
+1. Edit `Readme.md`, replacing this project's details with your own.
 
 ## License
 

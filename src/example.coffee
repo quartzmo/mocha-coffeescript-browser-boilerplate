@@ -1,3 +1,3 @@
-Example = if window? then window.Example = {} else exports
+Example = window.Example = {}
 
 Example.truth = -> true
