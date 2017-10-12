@@ -1,6 +1,6 @@
 # Mocha Browser & CoffeeScript Boilerplate
 
-This is a minimalistic boilerplate for a browser-based CoffeeScript project that is tested with [Mocha](http://visionmedia.github.com/mocha).
+This is a minimalistic boilerplate for a browser-based CoffeeScript project that is tested with [Mocha](https://mochajs.org/).
 The Mocha tests use the [Chai](https://github.com/chaijs/chai) assertion library for browser compatibility.
 The CoffeeScript `coffee` executable is required for source and test compilation. Once the CoffeeScript is compiled, CoffeeScript is **not** required for the browser-based tests, which are run simply by opening `test/index.html` with a modern browser.
 
